@@ -1,0 +1,54 @@
+// Mixin And Include
+
+@mixin list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin circle($dimensions) {
+  border-radius: 50%;
+  width: $dimensions;
+  height: $dimensions;
+}
+
+@mixin centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin overlay($color, $opacity) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba($color, $opacity);
+}
+
+@mixin keyF($anim-name) {
+  @keyframes #{$anim-name} {
+    @content;
+  }
+}
+
+@mixin breakpoints($points) {
+  @if $points == mobile {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $points == small {
+    @media (min-width: 767px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $points == medium {
+    @media (min-width: 991px) and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $points == large {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}

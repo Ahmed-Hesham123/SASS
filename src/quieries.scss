@@ -1,0 +1,43 @@
+// Import Global Rules
+@use "./sass/layout/global-rules";
+// Import Pages
+@use "./sass/pages/contact";
+// Import Colors
+@use "./sass/variables/colors" as *;
+// Import Mixins
+@use "./sass/helpers/mixins" as *;
+// Import Functions
+@use "./sass/helpers/functions" as *;
+
+$max_mobile: 767px;
+
+@media (max-width: $max_mobile) {
+  .sidebar {
+    padding: 20px;
+  }
+}
+
+// If condition + Mixin + Content
+
+.media {
+  @include breakpoints(mobile) {
+    font: {
+      size: 15px;
+    }
+  }
+  @include breakpoints(small) {
+    font: {
+      size: 18px;
+    }
+  }
+  @include breakpoints(medium) {
+    font: {
+      size: 20px;
+    }
+  }
+  @include breakpoints(large) {
+    font: {
+      size: 22px;
+    }
+  }
+}

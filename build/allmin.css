@@ -1,0 +1,643 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: teal;
+}
+
+.contact {
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    padding: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .media {
+    font-size: 15px;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .media {
+    font-size: 18px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  .media {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .media {
+    font-size: 22px;
+  }
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: teal;
+}
+
+.contact {
+  padding: 20px;
+}
+
+header {
+  color: green;
+}
+
+.footer {
+  background: black;
+}
+
+.copyright {
+  background: black;
+}
+
+.sidebar {
+  background: orange;
+  color: violet;
+}
+
+.parent {
+  font-weight: bold;
+}
+.parent .child {
+  font-size: 20px;
+}
+.parent .child .grand-child {
+  font-size: 15px;
+}
+
+.parent-one,
+.parent-two {
+  padding: 20px;
+}
+.parent-one .child,
+.parent-two .child {
+  padding: 10px;
+}
+
+.parent > .child {
+  font-size: 20px;
+}
+.parent > .test {
+  font-weight: bold;
+}
+
+.parent > .child {
+  font-size: 20px;
+}
+.parent .test {
+  font-weight: bold;
+}
+.parent + p {
+  font-size: 15px;
+}
+
+.parent > .element-one {
+  font-size: 10px;
+}
+.parent > .element-two {
+  font-size: 10px;
+}
+.parent .not-direct-child {
+  font-weight: bold;
+}
+
+.box .title {
+  font-size: 10px;
+}
+.box .description {
+  font-size: 8px;
+}
+.box.red {
+  color: red;
+}
+.box.green {
+  color: green;
+}
+.box:hover {
+  background: #eee;
+}
+.box:hover .title {
+  font-weight: bold;
+}
+:not(.box) {
+  font-weight: normal;
+}
+[dir=rtl] .box {
+  direction: rtl;
+}
+
+.box {
+  font-size: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-style: italic;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid red;
+  border-right: blue;
+}
+
+.main-box, .ads {
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.arrow-div, .box, .article {
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.ads {
+  font-size: 20px;
+  color: red;
+}
+
+.article {
+  font-size: 22px;
+  color: green;
+}
+
+.page {
+  background: #000;
+  color: #fff;
+}
+
+.box {
+  border-radius: 6px;
+}
+
+.arrow-div {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 50px auto;
+}
+.arrow-div::before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  top: 50%;
+  right: -40px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-left-color: red;
+}
+
+header .parent, header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  background: royalblue;
+  padding: 20px;
+}
+header h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+header .parent {
+  list-style: none;
+  gap: 20px;
+}
+header .parent li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Arial;
+}
+
+.ad-Itsh-ussemy6 {
+  font-size: 20px;
+  background-image: url("imgs/Itsh.png");
+  left: 0;
+}
+
+/* This comment will show in css file but not in compressed mode */
+/*! This comment will show in css file but and in compressed mode */
+.box {
+  font-size: 20px;
+}
+
+/* This comment contains interpolation => Itsh */
+ul.links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.circle-100 {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background: red;
+  color: #fff;
+}
+
+.circle-200 {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background: red;
+  color: #fff;
+}
+
+.center-circle {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.class-1 {
+  font-size: 11px;
+}
+
+.class-2 {
+  font-size: 12px;
+}
+
+.class-3 {
+  font-size: 13px;
+}
+
+.class-4 {
+  font-size: 14px;
+}
+
+.class-5 {
+  font-size: 15px;
+}
+
+.class-6 {
+  font-size: 16px;
+}
+
+.class-7 {
+  font-size: 17px;
+}
+
+.class-8 {
+  font-size: 18px;
+}
+
+.class-9 {
+  font-size: 19px;
+}
+
+.class-10 {
+  font-size: 20px;
+}
+
+.circle-100 {
+  width: 100;
+  height: 100;
+  border-radius: 50%;
+}
+
+.circle-200 {
+  width: 200;
+  height: 200;
+  border-radius: 50%;
+}
+
+.circle-300 {
+  width: 300;
+  height: 300;
+  border-radius: 50%;
+}
+
+.circle-400 {
+  width: 400;
+  height: 400;
+  border-radius: 50%;
+}
+
+.circle-500 {
+  width: 500;
+  height: 500;
+  border-radius: 50%;
+}
+
+.circle-600 {
+  width: 600;
+  height: 600;
+  border-radius: 50%;
+}
+
+.circle-700 {
+  width: 700;
+  height: 700;
+  border-radius: 50%;
+}
+
+.circle-800 {
+  width: 800;
+  height: 800;
+  border-radius: 50%;
+}
+
+.circle-900 {
+  width: 900;
+  height: 900;
+  border-radius: 50%;
+}
+
+.circle-1000 {
+  width: 1000;
+  height: 1000;
+  border-radius: 50%;
+}
+
+.red-theme .product {
+  background: #fff;
+  border-bottom: 2px solid red;
+}
+.red-theme .product .title {
+  color: red;
+  font-weight: bold;
+}
+
+.green-theme .product {
+  background: #fff;
+  border-bottom: 2px solid green;
+}
+.green-theme .product .title {
+  color: green;
+  font-weight: bold;
+}
+
+.blue-theme .product {
+  background: #fff;
+  border-bottom: 2px solid blue;
+}
+.blue-theme .product .title {
+  color: blue;
+  font-weight: bold;
+}
+
+.orange-theme .product {
+  background: #fff;
+  border-bottom: 2px solid orange;
+}
+.orange-theme .product .title {
+  color: orange;
+  font-weight: bold;
+}
+
+.facebook {
+  background: "blue";
+  color: #fff;
+}
+.facebook::before {
+  content: "facebook";
+}
+
+.youtube {
+  background: "red";
+  color: #fff;
+}
+.youtube::before {
+  content: "youtube";
+}
+
+.github {
+  background: "black";
+  color: #fff;
+}
+.github::before {
+  content: "github";
+}
+
+.twitter {
+  background: "royalblue";
+  color: #fff;
+}
+.twitter::before {
+  content: "twitter";
+}
+
+.one {
+  font-size: 20px;
+  background: red;
+  color: #fff;
+  padding: 10px;
+}
+
+.two {
+  font-size: 15px;
+  background: green;
+  color: #fff;
+  padding: 7.5px;
+}
+
+.three {
+  font-size: 22px;
+  background: blue;
+  color: #fff;
+  padding: 11px;
+}
+
+.width-100 {
+  width: 100px;
+  height: 50px;
+}
+
+.width-200 {
+  width: 200px;
+  height: 100px;
+}
+
+.width-300 {
+  width: 300px;
+  height: 150px;
+}
+
+.width-400 {
+  width: 400px;
+  height: 200px;
+}
+
+.width-500 {
+  width: 500px;
+  height: 250px;
+}
+
+.width-600 {
+  width: 600px;
+  height: 300px;
+}
+
+.width-700 {
+  width: 700px;
+  height: 350px;
+}
+
+.width-800 {
+  width: 800px;
+  height: 400px;
+}
+
+.width-900 {
+  width: 900px;
+  height: 450px;
+}
+
+.width-1000 {
+  width: 1000px;
+  height: 500px;
+}
+
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.element {
+  width: 200px;
+  height: 100px;
+  top: 350px;
+}
+
+.black-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes go-up {
+  from {
+    bottom: 0;
+  }
+  to {
+    top: 100px;
+  }
+}
+@keyframes go-up {
+  from {
+    bottom: 0;
+  }
+  to {
+    top: 100px;
+  }
+}
